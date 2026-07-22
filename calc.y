@@ -34,5 +34,5 @@ int yywrap() {
 }
 
 void yyerror() {
- printf("Error");
+  printf("Error");
 }
