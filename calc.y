@@ -16,12 +16,12 @@
 st:exp '\n' {printf("Answer=%d\n",$1);};
 
 exp:exp'+'exp {$$=$1+$3;}
-|exp'-'exp {$$=$1-$3;}
-|exp'*'exp {$$=$1*$3;}
-|exp'/'exp {$$=$1/$3;}
-|'('exp')' {$$=$2;}
-|NUMBER {$$=$1;}
-;
+   |exp'-'exp {$$=$1-$3;}
+   |exp'*'exp {$$=$1*$3;}
+   |exp'/'exp {$$=$1/$3;}
+   |'('exp')' {$$=$2;}
+   |NUMBER {$$=$1;}
+   ;
 %%
 
 void main() {
