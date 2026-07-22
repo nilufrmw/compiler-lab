@@ -25,7 +25,7 @@ exp:exp'+'exp {$$=$1+$3;}
 %%
 
 void main() {
-  printf("Enter the expression:");
+  printf("Enter the expression: ");
   yyparse();
 }
 
